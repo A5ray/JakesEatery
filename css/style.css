@@ -14,15 +14,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.left .center .right {
+.left, .center, .right {
     display: flex;
-    justify-content: center;;
+    justify-content: center;
     align-items: center;
     height: 50px;
-    
 }
 
-.left .right {
+.left, .right {
     width: 25%;
 }
 
@@ -35,11 +34,11 @@
     padding: 10px;
     font-size: 18px;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
 }
 
 
-.button {
+button {
     color: black;
     font-size: 16px;
     padding: 15px;
@@ -55,4 +54,70 @@
 }
 /* Column styles */
 
+.column {
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.meal1, .meal2, .meal3 {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.meal1 {
+    margin-top: 20px;
+    background-image: url(../images/steak.png);
+}
+.meal2 {
+    background-image: url(../images/soup.png);
+}
+.meal3 {
+    background-image: url(../images/cheesecake.png);
+}
+.text {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 /* Footer Styles */
+.footer {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fb, .tw, .ig {
+    padding: 10px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+
+}
+.fb {
+    color: lightblue;
+}
+.tw {
+    color: yellow;
+}
+
+.ig {
+    color: red;
+}
